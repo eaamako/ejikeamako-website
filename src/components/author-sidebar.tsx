@@ -33,7 +33,7 @@ export function AuthorSidebar() {
 
       {/* ── Name ── */}
       <p
-        className="text-[1.125rem] font-bold leading-tight tracking-tight"
+        className="text-[1.375rem] font-bold leading-tight tracking-tight lg:text-[1.125rem]"
         style={{ color: "var(--mm-heading)" }}
       >
         Ejikeme Amako
@@ -41,13 +41,13 @@ export function AuthorSidebar() {
 
       {/* ── Credentials ── */}
       <p
-        className="mt-1.5 text-[0.8125rem] font-semibold uppercase tracking-widest"
+        className="mt-1.5 text-[0.9375rem] font-semibold uppercase tracking-widest lg:text-[0.8125rem]"
         style={{ color: "var(--mm-link)" }}
       >
         Member, IEEE
       </p>
       <div
-        className="mt-1 text-[0.875rem] leading-snug"
+        className="mt-1 text-[1rem] leading-snug lg:text-[0.875rem]"
         style={{ color: "var(--mm-muted)" }}
       >
         Ph.D. Researcher<br />
@@ -62,11 +62,11 @@ export function AuthorSidebar() {
 
       {/* ── Location ── */}
       <div
-        className="mb-3 flex items-center justify-center gap-1.5 text-[0.8125rem] lg:justify-start"
+        className="mb-3 flex items-center justify-center gap-1.5 text-[0.9375rem] lg:justify-start lg:text-[0.8125rem]"
         style={{ color: "var(--mm-muted)" }}
       >
-        <MapPin className="h-3.5 w-3.5 shrink-0" />
-        <span>Cookeville, TN, USA</span>
+        <MapPin className="h-4 w-4 shrink-0 lg:h-3.5 lg:w-3.5" />
+        <span> TN, USA</span>
       </div>
 
       {/* ── Social links ── */}
