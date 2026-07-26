@@ -14,7 +14,7 @@ export function AuthorSidebar() {
       <Link
         href="/"
         title="Ejikeme Amako"
-        className="author-avatar mx-auto mb-5 block w-32 lg:mx-0 lg:w-full lg:max-w-[13rem]"
+        className="author-avatar mx-auto mb-5 block w-48 sm:w-40 lg:mx-0 lg:w-full lg:max-w-[13rem]"
       >
         <Image
           src={PROFILE_IMG}
@@ -70,7 +70,7 @@ export function AuthorSidebar() {
       </div>
 
       {/* ── Social links ── */}
-      <ul className="space-y-0.5">
+      <ul className="grid grid-cols-2 gap-x-2 gap-y-1 sm:grid-cols-2 lg:grid-cols-1 lg:space-y-0.5">
         {sidebarSocials.map((s) => (
           <li key={s.label}>
             <a
