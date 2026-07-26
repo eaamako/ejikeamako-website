@@ -42,15 +42,15 @@ export function SiteHeader() {
           borderBottom: "1px solid var(--mm-border)",
         }}
       >
-        <div className="mx-auto flex h-[72px] max-w-[1320px] items-center gap-6 px-5 lg:px-10">
+        <div className="mx-auto flex h-[72px] max-w-[1320px] items-center gap-2 px-2 sm:gap-4 sm:px-5 lg:gap-6 lg:px-10">
 
           {/* Logo */}
           <Link
             href="/"
-            className="mr-auto whitespace-nowrap leading-none"
+            className="mr-auto whitespace-nowrap leading-none flex-shrink min-w-0"
           >
             <span
-              className="text-[2.25rem] font-bold tracking-tight"
+              className="text-[1.375rem] sm:text-[1.75rem] lg:text-[2.25rem] font-bold tracking-tight"
               style={{ color: "var(--mm-heading)" }}
             >
               Ejikeme Amako
@@ -71,7 +71,7 @@ export function SiteHeader() {
           </nav>
 
           {/* Icon controls */}
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-0.5 sm:gap-1 flex-shrink-0">
             <IconBtn aria-label="Search" onClick={() => setSearchOpen((s) => !s)}>
               <Search className="h-[1.125rem] w-[1.125rem]" strokeWidth={2} />
             </IconBtn>
@@ -80,7 +80,7 @@ export function SiteHeader() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="grid h-10 w-10 place-items-center rounded-md transition-colors hover:bg-[var(--mm-table-stripe)] hover:text-[var(--mm-link)]"
+              className="hidden sm:grid h-10 w-10 place-items-center rounded-md transition-colors hover:bg-[var(--mm-table-stripe)] hover:text-[var(--mm-link)]"
               style={{ color: "var(--mm-text)" }}
             >
               <Linkedin className="h-[1.125rem] w-[1.125rem]" strokeWidth={2} />
